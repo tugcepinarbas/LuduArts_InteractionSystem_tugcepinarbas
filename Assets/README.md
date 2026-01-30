@@ -7,24 +7,25 @@
 | Bilgi | Değer |
 |-------|-------|
 | Unity Versiyonu | 6000.0.52f1 |
-| Render Pipeline | Built-in / URP / HDRP |
+| Render Pipeline | Built-in |
 | Case Süresi | X saat |
-| Tamamlanma Oranı | %XX |
+| Tamamlanma Oranı | %XX | (Herhangi bir yüzdelik oran veremedim)
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Kurulum
 
 1. Repository'yi klonlayın:
 ```bash
 git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinarbas
+
 ```
 
 2. Unity Hub'da projeyi açın
-3. `Assets/[ProjectName]/Scenes/TestScene.unity` sahnesini açın
+3. `Assets/LuduArts_InteractionSystem_tugcepinarbas/Scenes/TestScene.unity` sahnesini açın
 4. Play tuşuna basın
 
----
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Nasıl Test Edilir
 
@@ -35,7 +36,7 @@ git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinar
 | WASD | Hareket |
 | Mouse | Bakış yönü |
 | E | Etkileşim |
-| [Diğer] | [Açıklama] |
+
 
 ### Test Senaryoları
 
@@ -58,7 +59,7 @@ git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinar
    - E'ye basılı tutun, progress bar dolsun
    - Sandık açılsın ve içindeki item alınsın
 
----
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Mimari Kararlar
 
@@ -85,7 +86,7 @@ git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinar
 | [State] | [Door states] | [Açıklama] |
 | [vb.] | | |
 
----
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Ludu Arts Standartlarına Uyum
 
@@ -94,8 +95,8 @@ git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinar
 | Kural | Uygulandı | Notlar |
 |-------|-----------|--------|
 | m_ prefix (private fields) | [x] / [ ] | |
-| s_ prefix (private static) | [x] / [ ] | |
-| k_ prefix (private const) | [x] / [ ] | |
+| s_ prefix (private static) | [ ] / [ ] | |
+| k_ prefix (private const) | [ ] / [ ] | |
 | Region kullanımı | [x] / [ ] | |
 | Region sırası doğru | [x] / [ ] | |
 | XML documentation | [x] / [ ] | |
@@ -123,16 +124,16 @@ git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinar
 ### Zorlandığım Noktalar
 > [Standartları uygularken zorlandığınız yerler]
 
----
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Tamamlanan Özellikler
 
 ### Zorunlu (Must Have)
 
-- [] / [ ] Core Interaction System
-  - [] / [ ] IInteractable interface
-  - [] / [ ] InteractionDetector
-  - [] / [ ] Range kontrolü
+- [x] / [ ] Core Interaction System
+  - [x] / [ ] IInteractable interface
+  - [x] / [ ] InteractionDetector
+  - [x] / [ ] Range kontrolü
 
 - [] / [ ] Interaction Types
   - [] / [ ] Instant
@@ -143,7 +144,7 @@ git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinar
   - [] / [ ] Door (locked/unlocked)
   - [] / [ ] Key Pickup
   - [] / [ ] Switch/Lever
-  - [] / [ ] Chest/Container
+  - [x] / [ ] Chest/Container
 
 - [] / [ ] UI Feedback
   - [] / [ ] Interaction prompt
@@ -164,7 +165,7 @@ git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinar
 - [ ] Save/Load states
 - [ ] Chained interactions
 
----
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Bilinen Limitasyonlar
 
@@ -180,7 +181,7 @@ git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinar
 1. [Öneri] - [Nasıl daha iyi olabilirdi]
 2. [Öneri]
 
----
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Ekstra Özellikler
 
@@ -193,41 +194,41 @@ Zorunlu gereksinimlerin dışında eklediklerim:
 2. **[Özellik Adı]**
    - ...
 
----
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Dosya Yapısı
 
 ```
 Assets/
-├── [ProjectName]/
-│   ├── Scripts/
-│   │   ├── Runtime/
-│   │   │   ├── Core/
-│   │   │   │   ├── IInteractable.cs
+├── [ProjectName]/ [ok]
+│   ├── Scripts/    [ok]
+│   │   ├── Runtime/     [ok]
+│   │   │   ├── Core/    [ok]
+│   │   │   │   ├── IInteractable.cs  [ok]
 │   │   │   │   └── ...
-│   │   │   ├── Interactables/
-│   │   │   │   ├── Door.cs
+│   │   │   ├── Interactables/  [ok]
+│   │   │   │   ├── Door.cs   [ok]
 │   │   │   │   └── ...
-│   │   │   ├── Player/
+│   │   │   ├── Player/  [ok]
 │   │   │   │   └── ...
-│   │   │   └── UI/
+│   │   │   └── UI/  [ok]
 │   │   │       └── ...
-│   │   └── Editor/
-│   ├── ScriptableObjects/
-│   ├── Prefabs/
-│   ├── Materials/
-│   └── Scenes/
-│       └── TestScene.unity
-├── Docs/
-│   ├── CSharp_Coding_Conventions.md
-│   ├── Naming_Convention_Kilavuzu.md
-│   └── Prefab_Asset_Kurallari.md
-├── README.md
-├── PROMPTS.md
-└── .gitignore
+│   │   └── Editor/  [ok]
+│   ├── ScriptableObjects/ [ok]
+│   ├── Prefabs/  [ok]
+│   ├── Materials/  [ok]
+│   └── Scenes/  [ok]
+│       └── TestScene.unity  [ok]
+├── Docs/ [ok]
+│   ├── CSharp_Coding_Conventions.md  [ok]
+│   ├── Naming_Convention_Kilavuzu.md [ok]
+│   └── Prefab_Asset_Kurallari.md  [ok]
+├── README.md [ok]
+├── PROMPTS.md [ok]
+└── .gitignore [ok]
 ```
 
----
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## İletişim
 
