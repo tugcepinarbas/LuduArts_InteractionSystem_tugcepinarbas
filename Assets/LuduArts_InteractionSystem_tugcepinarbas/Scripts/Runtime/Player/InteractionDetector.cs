@@ -12,7 +12,7 @@ namespace InteractionSystem.Runtime.Player
         [SerializeField] private LayerMask m_InteractableLayer;
 
 
-        void Update()
+        private void Update()
         {
             // Ray oluþtur
             Ray ray = new Ray(m_PlayerCamera.transform.position, m_PlayerCamera.transform.forward);

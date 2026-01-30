@@ -15,8 +15,8 @@ namespace InteractionSystem.Runtime.Interactions
         public void OnInteract()
         {
             m_IsOpen = !m_IsOpen;          // Kapý açýksa kapat, kapalýysa aç
-            
-           
+
+
             float targetAngle = m_IsOpen ? m_OpenAngle : 0f;                 // Kapýyý kendi ekseninde (Y ekseninde) döndür
 
             transform.localRotation = Quaternion.Euler(0, targetAngle, 0);   //Kapýyý döndür (Quaternion kullanmak açý karýþýklýklarýný önler)
@@ -24,7 +24,7 @@ namespace InteractionSystem.Runtime.Interactions
             // Console'a durumu yazdýr (Hata takibi için çok önemli)
             Debug.Log("Sistem: Kapý durumu deðiþti. Yeni durum Açýk mý?: " + m_IsOpen);
         }
-        
+
         // Arayüzün (Interface) istediði diðer zorunlu kýsýmlar
         public bool CanInteract() => true;
         public string GetInteractionPrompt() => m_IsOpen ? "Kapat (E)" : "Aç (E)";
