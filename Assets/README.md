@@ -8,7 +8,7 @@
 |-------|-------|
 | Unity Versiyonu | 6000.0.52f1 |
 | Render Pipeline | Built-in |
-| Case Süresi | X saat |
+| Case Süresi | 12 saat |
 | Tamamlanma Oranı | %XX | (Herhangi bir yüzdelik oran veremedim)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
