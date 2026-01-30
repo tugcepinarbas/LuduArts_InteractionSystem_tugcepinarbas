@@ -23,7 +23,8 @@
 **Alınan Cevap (Özet):**
 ```
 [Tüm dokümanları inceledim. Ludu Arts gerçekten çok disiplinli bir yapı istiyor. 
-Özellikle CSharp_Coding_Conventions.md dosyasındaki Region sıralaması ve prefix (m_, s_, k_) kullanımı hayati önem taşıyor.Hiç vakit kaybetmeden 1.Saat: Core System aşamasına geçiyoruz.
+Özellikle CSharp_Coding_Conventions.md dosyasındaki Region sıralaması ve prefix (m_, s_, k_) kullanımı hayati önem taşıyor.
+Hiç vakit kaybetmeden 1.Saat: Core System aşamasına geçiyoruz.
 
 Yapılacaklar Listesi:
 
@@ -66,7 +67,8 @@ Bu, sistemin performanslı çalışmasını sağlar.
 
 2. İletişim Köprüsü Kurmak (Interface Kullanımı)
 Detector, baktığı şeyin bir "Kapı" mı yoksa "Sandık" mı olduğunu bilmez. Sadece baktığı objede IInteractable arayüzünün (interface) olup olmadığına bakar.
-Eğer arayüz varsa, nesneye "Seninle etkileşime giriyorum!" mesajını gönderir.Bu sayede yeni bir obje eklediğinizde (örneğin bir 'Lamba'), Detector kodunda hiçbir değişiklik yapmanıza gerek kalmaz.
+Eğer arayüz varsa, nesneye "Seninle etkileşime giriyorum!" mesajını gönderir.
+Bu sayede yeni bir obje eklediğinizde (örneğin bir 'Lamba'), Detector kodunda hiçbir değişiklik yapmanıza gerek kalmaz.
 
 3. Girdi Yönetimi (Input Management)
 Oyuncu "E" tuşuna bastığında ne olacağına bu script karar verir.
@@ -102,8 +104,19 @@ OnInteract: Tuşa basıldığı an tetiklenir. OnInteractionStart/End: Tuşa bas
 
 **Alınan Cevap (Özet):**
 ```
-[Interaction Detector (Göz/Beyin): Oyuncunun neye baktığını bulan mekanizmadır./Sadece P_Player (Oyuncu) üzerindedir./Raycast ile "Interactable" objeleri arar./Sürekli çalışır (Her karede etrafı tarar).
-Interaction (Eylem/Sonuç): Nesneyle kurulan iletişimin kendisidir./Door, Chest veya Light gibi nesnelerin içindedir./"E"ye basıldığında ne olacağını (kapı açılması vb.) belirler./Sadece sen tuşa bastığında bir kez çalışır.]
+[Interaction Detector (Göz/Beyin): 
+Oyuncunun neye baktığını bulan mekanizmadır.
+Sadece P_Player (Oyuncu) üzerindedir.
+Raycast ile "Interactable" objeleri arar.
+Sürekli çalışır (Her karede etrafı tarar).
+
+
+Interaction (Eylem/Sonuç): 
+Nesneyle kurulan iletişimin kendisidir.
+Door, Chest veya Light gibi nesnelerin içindedir.
+"E"ye basıldığında ne olacağını (kapı açılması vb.) belirler.
+Sadece sen tuşa bastığında bir kez çalışır.]
+
 ```
 
 **Nasıl Kullandım:**
@@ -112,7 +125,8 @@ Interaction (Eylem/Sonuç): Nesneyle kurulan iletişimin kendisidir./Door, Chest
 - [ ] Reddettim
 
 **Açıklama:**
-> [İki kritik noktada takıldığım konulardı.İlk başta kafam karıştığı için ayırt edemedim.Sonrasında Interecation ve Interactor detector arasındaki farkı sorarak kafamda oturmuş oldu.]
+> [İki kritik noktada takıldığım konulardı.İlk başta kafam karıştığı için ayırt edemedim.
+Sonrasında Interaction ve Interactor detector arasındaki farkı sorarak kafamda oturmuş oldu.]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -311,10 +325,12 @@ Klasör Düzeni (%100): Assets altındaki hiyerarşin ve isimlendirmelerin "Ente
 
 UI Sistemi (%100): TextMeshPro entegrasyonu ve bakılan objeye göre yazı çıkması (Press E) kusursuz çalışıyor. 
 
-İçerik/Nesneler (%70-80): Kapı sistemini kodladın, sahnede anahtar ve sandık objelerin var. Sadece sandığın açılması veya ışığın yanması gibi "görsel" geri bildirimleri yetiştirememiş olabilirsin.
+İçerik/Nesneler (%70-80): Kapı sistemini kodladın, sahnede anahtar ve sandık objelerin var. 
+Sadece sandığın açılması veya ışığın yanması gibi "görsel" geri bildirimleri yetiştirememiş olabilirsin.
 
 📝 README'ye Şöyle Yazabilirsin:
-Tamamlama Oranı: %90 (Not: Sistemin tüm ana mimarisi, Raycast tespiti ve dinamik UI sistemi %100 tamamlanmıştır. Bazı nesne etkileşimleri [Sandık/Işık] mimariye uygun şekilde prototiplenmiştir.)
+Tamamlama Oranı: %90 (Not: Sistemin tüm ana mimarisi, Raycast tespiti ve dinamik UI sistemi %100 tamamlanmıştır. 
+Bazı nesne etkileşimleri [Sandık/Işık] mimariye uygun şekilde prototiplenmiştir.)
 
 Neden %100 değil? Eğer Lead Game Developer projeyi açtığında sandığın kapağı dönmüyorsa veya anahtar alındığında bir ses/efekt çıkmıyorsa %100 yazman yanıltıcı olabilir. 
 Ama "Sistem bitti, sadece birkaç nesne animasyonu eksik" mesajı vermek, senin neyi yapıp neyi yapamadığını bildiğini gösterir ki bu bir "Junior" için harika bir özelliktir.
@@ -370,7 +386,8 @@ Sen zor olanı yaptın, kolay olanlar (animasyonlar) yetişmedi. Bu yüzden %60 
 - [x] Reddettim
 
 **Açıklama:**
-> [Bana göre tam tersi daha birçok konuda eksiğim var bunu bu Case'de çalışırken daha fazla görme şansım oldu.Case bana hem birçok şey kattı hem de daha yolun başında olduğumu gösterdi.
+> [Bana göre tam tersi daha birçok konuda eksiğim var bunu bu Case'de çalışırken daha fazla görme şansım oldu.
+Case bana hem birçok şey kattı hem de daha yolun başında olduğumu gösterdi.
 Gerçek anlamda çok iyi hazırlanmış bir Case Study örneği fazlasıyla beni geliştiren, geliştirirken de sınırlarımı zorlayan bir çalışmaydı.
 Fazlaca kavram,komut ve sistematik çalışmanın önemini öğretti.Commit etmek ama etmeden önce ne yaptığını yazmak, sonrasında Git'e push etmek tam da eski çalıştığım sistemi hatırlattı.
 Mekanik Tasarım yaparken hep bu sistemle ilerlerdik(adı PDM),sadece word,excel vs dosyasında bile çalışsak bu şekildeydi.Bu anlamda veri kaybının en aza indirgenmesi güzel.]
