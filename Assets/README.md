@@ -11,13 +11,13 @@
 | Case Süresi | X saat |
 | Tamamlanma Oranı | %XX |
 
----
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Kurulum
 
 1. Repository'yi klonlayın:
 ```bash
-git clone https://github.com/[username]/[repo-name].git
+git clone https://github.com/tugcepinarbas/LuduArts_InteractionSystem_tugcepinarbas
 ```
 
 2. Unity Hub'da projeyi açın
